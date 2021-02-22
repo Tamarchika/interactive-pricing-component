@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="app.js" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive pricing component</title>  
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+        <div class="pageviews">
+          <div id="output"></div><span>pageviews</span>
+        </div>
+        <div class="slide-bar">
+          <input type="range" id= "input" min="0" value="2" max="4" step="1" style="position: absolute;">
+          <div class="pricer">
+           <div id="price"></div><span> / month</span>
+          </div>
+          <div id="ProgressBar"></div>
+        </div>
+        <div class="togglebar">
+           <span class="monthly">Monthly Billing</span>
+            <label class="switch">
+              <input type="checkbox"  id="toggle" onchange="input.oninput()" onmousemove="input.oninput()">
+              <span class="slider round"></span>
+            </label>
+           <span class="yearly">Yearly Billing</span>
+           <div class="discount">
+             <span>-25%</span> 
+             <p>discount</p>
+           </div>
+        </div>
+     <div class="aside">
+       <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul> 
+       <div class="btn">
+         <a href="#">Start my trial</a>
+          </div>
+      </div>
+    </div>
+    </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tamara Ratiani</a>.
+  </div>
+</body>
+</html>
